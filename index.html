@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eval Layout menu</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+
+</head>
+<body class="accueil">
+<header style="background-color: #154279">
+    <div style="background-color: #007bff">
+    <nav class="barrnav">
+        <div class="hamb" onclick="toggle()">
+            <img class="hambico" src="img/menu_burger/hamburger.png" alt="icone menu burger">
+        </div>
+        <div class="menu hidden">
+            <div><a href="">Actualités</a></div>
+            <div><a href="">Nous connaître</a></div>
+            <div><a href="">Nos Installations</a></div>
+            <div><a href="">Économisons</a></div>
+            <div><a href="">En savoir plus</a></div>
+            <div><a href="">Souscrire</a></div>
+        </div>
+    </nav>
+    </div>
+</header>
+<div class="defil">
+
+</div>
+<article class="reg1">
+    <div class="article__div1">
+
+    </div>
+    <div class="cutHalf">
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+
+    <div class="cutHalf">
+
+        <div class="points">
+
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+</body>
+<script>
+    function toggle() {
+        let elementToToggle = document.getElementsByClassName("menu")[0];
+        elementToToggle.classList.toggle("hidden");
+
+        let img1 = "img/menu_burger/hamburger.png",
+            img2 = "img/menu_burger/exitico.svg";
+
+        let imgElement = document.getElementsByClassName('hambico')[0];
+        imgElement.src = (imgElement.attributes.src.value === img1)? img2 : img1;
+    }
+</script>
+</html>
